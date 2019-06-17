@@ -24,7 +24,7 @@ class ElementItem(private val header: Element, private val onItemClick: OnItemCl
             Picasso.get().load(item.imageUrl).into(view.image)
             view.description.text = item.description
 
-            view.setOnClickListener { onItemClick }
+            view.setOnClickListener { onItemClick.invoke() }
         }
 
     }
