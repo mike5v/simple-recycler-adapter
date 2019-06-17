@@ -1,0 +1,3 @@
+include ':app'
+include ':simple-recycler-adapter'
+project(':simple-recycler-adapter').projectDir = file('../simple-recycler-adapter')
