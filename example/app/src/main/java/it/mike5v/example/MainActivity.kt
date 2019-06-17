@@ -1,11 +1,12 @@
 package it.mike5v.example
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import it.mike5v.example.item.HeaderItem
 import it.mike5v.example.item.ElementItem
+import it.mike5v.example.item.HeaderItem
 import it.mike5v.simplerecycleradapter.SimpleRecyclerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -33,13 +34,17 @@ class MainActivity : AppCompatActivity() {
         adapter.clear()
         adapter.add(HeaderItem(header))
         elements.map {
-            adapter.add(ElementItem(it))
+            adapter.add(ElementItem(it) { itemClick() })
         }
     }
 
     private fun setupRecycler() {
         recycler.adapter = adapter
         recycler.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+    }
+
+    private fun itemClick() {
+        Toast.makeText(this, "ROOOOOOAAAARRR", Toast.LENGTH_LONG).show()
     }
 }
 
