@@ -1,11 +1,11 @@
 ext {
-    github_username = 'your_username'
-    github_repository_name = 'your_repository_name'
+    github_username = 'mike5v'
+    github_repository_name = 'simple-recycler-adapter'
 
-    maintainer = 'Your name'
+    maintainer = 'Michele Quintavalle'
 
-    library_description = 'Your library brief description'
-    library_keywords = ['your', 'library', 'keywords']
+    library_description = 'Simple Recycler Adapter'
+    library_keywords = ['Recycler', 'Adapter', 'RecyclerView']
     library_licenses = ["Apache-2.0"]
     library_licenses_url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     library_project_group = 'it.mike5v'
