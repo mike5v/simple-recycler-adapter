@@ -68,15 +68,6 @@ dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
-
-// add the following information to the file: local.properties situated in the parent directory of
-// where this file is:
-//
-// bintray.user=yourusername
-// bintray.apikey=api key got from the bintray profile
-//
-// be sure to add local.properties to the .gitignore!
-
 Properties properties = new Properties()
 if (project.rootProject.file("local.properties").exists()) {
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
